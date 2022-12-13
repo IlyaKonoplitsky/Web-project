@@ -1,0 +1,86 @@
+body {
+    font-family: Roboto, serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #163152;
+    background-color: #FDFDFF;
+}
+
+.site-navigation a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #163152;
+    text-decoration: none;
+}
+
+.hero h1 {
+    font-style: italic;
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 400;
+}
+
+.data {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.join h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.description h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.contacts h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.contacts h3 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contacts p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contacts a {
+    font-size: 16px;
+    line-height: 22px;
+    color: #163152;
+    text-decoration: none;
+}
+
+.main-footer .regulations {
+    font-size: 10px;
+    line-height: 12px;
+    color: #163152;
+    text-decoration: none;
+}
+
+.main-footer p {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.main-footer h3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.main-footer a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #163152;
+    text-decoration: none;
+}
