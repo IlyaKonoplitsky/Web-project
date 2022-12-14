@@ -38,6 +38,65 @@ body {
     font-weight: 700;
 }
 
+.news h2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.news .active {
+    text-decoration: underline;
+    text-decoration-color: #00C6BD;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+    text-align: center;
+    text-underline-position: under;
+}
+
+.news figcaption {
+    font-size: 16px;
+    line-height: 19px;
+    color: #8693A4;
+}
+
+.news h3 {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.news p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.news h4{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.news-list-item {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.news blockquote {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.author {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8693A4;
+}
+
 .contacts h2 {
     font-size: 24px;
     line-height: 34px;
