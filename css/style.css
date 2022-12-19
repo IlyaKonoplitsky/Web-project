@@ -81,6 +81,20 @@ body {
     text-underline-position: under;
 }
 
+.gallery h2 {
+	text-decoration: underline;
+    text-decoration-color: #00C6BD;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+}
+
+.gallery h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 34px;
+}
+
 .news figcaption {
     font-size: 16px;
     line-height: 19px;
@@ -356,3 +370,38 @@ body {
     margin: 0;
     margin-bottom: 20px;
 }
+
+.gallery {
+	width: 1170px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 120px;
+}
+
+.gallery h2 {
+	margin-bottom: 55px;
+	text-align: center;
+}
+
+.slider {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.preview-list  {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.preview-list li{
+	margin-bottom: 30px;
+}
+
+.preview-list .last-el {
+	margin-bottom: 0;
+}
+
