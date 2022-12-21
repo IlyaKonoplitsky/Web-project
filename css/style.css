@@ -146,10 +146,6 @@ body {
     font-weight: 700;
 }
 
-.copyright {
-	font-weight: 400;
-	font-size: 10px;
-}
 
 .contacts h3 {
     font-size: 16px;
@@ -168,14 +164,13 @@ body {
     text-decoration: none;
 }
 
-.main-footer .regulations {
-    font-size: 10px;
-    line-height: 12px;
-    color: #163152;
-    text-decoration: none;
-}
 
 .main-footer p {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.footer-column {
     font-size: 10px;
     line-height: 12px;
 }
@@ -238,6 +233,7 @@ body {
 .hero h1 {
     margin-bottom: 40px;
 	margin-top: 0;
+    margin-left: 70px;
 }
 
 .join {
@@ -260,6 +256,8 @@ body {
 
 .join-content {
     width: 400px;
+    height: 262px;
+    vertical-align: text-top;
 }
 
 .join-content h2 {
@@ -272,6 +270,18 @@ body {
 
 .join-content-2 h2{
     margin-bottom: 35px;
+}
+
+.join-content-2 {
+    text-align: right;
+}
+
+.join-content-2 .blog-article-date {
+    margin-right: 0;
+}
+
+.blog-article-date {
+    margin-right: 180px;
 }
 
 .news h2 {
@@ -293,6 +303,21 @@ body {
     margin-bottom: 110px;
 }
 
+.news-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    padding-left: 20px;
+
+}
+.user h4 {
+    margin-bottom: 15px;
+}
+
+.new-list li {
+    margin-bottom: 8px;
+}
+
 .contacts {
 	margin-top: 0;
 	margin: 0;
@@ -312,8 +337,6 @@ body {
     width: 400px;
 }
 
-
-
 .map {
     width: 670px;
 }
@@ -321,7 +344,6 @@ body {
 .contacts h2 {
     margin-bottom: 35px;
 }
-
 
 .main-footer{
     padding: 60px 0;
@@ -349,7 +371,6 @@ body {
     margin-right: 125px;
 }
 
-
 .footer-navigation {
     width: 870px;
     display: flex;
@@ -373,12 +394,12 @@ body {
 
 .gallery {
 	width: 1170px;
-	margin: 0;
-	padding: 0;
+    margin: 0 auto;
 	margin-bottom: 120px;
 }
 
 .gallery h2 {
+    margin: 0;
 	margin-bottom: 55px;
 	text-align: center;
 }
@@ -398,10 +419,170 @@ body {
 }
 
 .preview-list li{
-	margin-bottom: 30px;
+    width: 170px;
+    height: 150px;
+    margin-bottom: 30px;
 }
 
-.preview-list .last-el {
-	margin-bottom: 0;
+.preview-list a {
+    position: relative;
+    display: block;
 }
+
+.preview-list img {
+    display: block;
+}
+
+.preview-list a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(253, 253, 255, 0.5);
+}
+
+.preview-list a.active-item::before{
+    background-color: transparent;
+}
+
+.logoo {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-navigation-item {
+    margin-right: 30px;
+}
+
+.site-navigation-item:last-child {
+    margin-right: 0;
+}
+
+.iconn { 
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00C6BD;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid #00C6BD;
+    padding-left: 20px;
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+
+.holiday {
+    margin-bottom: 47px;
+}
+
+.info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.info .author {
+    padding-left: 15px;
+}
+
+.info .author time {
+    display: flex;
+    flex-wrap: wrap;
+    width: 142px;
+}
+
+.share {
+    margin-left: 509px;
+}
+
+.date {
+    margin-top: 9px;
+}
+
+.contacts-discription h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    margin-bottom: 35px;
+}
+
+.contacts-list {
+    margin: 0;
+    padding: 00;
+    list-style: none;
+}
+
+.contacts-list li {
+    font-display: flex;
+    margin-bottom: 15px;
+}
+
+.contacts-list h3 {
+    display: inline;
+}
+
+.inline-el {
+    display: inline;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.social-item {
+    margin-right: 15px;
+}
+
+.social-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #00C6BD;
+}
+
+.yaxt-logo {
+    width: 100px;
+    height: 106px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.footer-navigation h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.company-list-item {
+    margin-bottom: 10px;
+}
+
+
+
 
