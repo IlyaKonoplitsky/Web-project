@@ -1,272 +1,394 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>Парусник</title>
-</head> 
-<body>
+    <title>Яхт клуб</title>
+  </head>
+  <body class="page">
     <header class="page-header">
-        <nav class="main-nav">
-            <p class="logo"><img src="img/logo.svg" width="64" height="68" alt="Логотип яхт-клуба Yacht Club"></p>
-            <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="#">Наш клуб</a></li>
-                <li class="site-navigation-item"><a href="#">Регаты</a></li>
-                <li class="site-navigation-item"><a href="#">Команда</a></li>
-                <li class="site-navigation-item"><a href="#">Обучение</a></li>
-                <li class="site-navigation-item"><a href="#">Новости</a></li>
-                <li class="site-navigation-item"><a href="#">Контакты</a></li>
-            </ul>
-            <a class="icon"><img src="img/user.svg" width="16" height="18" alt="Войти в кабинет пользователя"></a>
-        </nav>
+      <div class="services">
+        <div class="services-content">
+          <a class="location" href="#">Сочи</a>
+          <p class="caption">Тема</p>
+          <ul class="theme-switcher">
+            <li>
+              <button class="theme-button-dark" type="button"></button>
+            </li>
+            <li>
+              <button class="theme-button-light active" type="button"></button>
+            </li>
+          </ul>
+          <p class="caption">Шрифт</p>
+          <ul class="fonts">
+            <li>
+              <button class="font-button-sans-serif active" type="button">А</button>
+            </li>
+            <li>
+              <button class="font-button-serif" type="button">А</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <p class="logo">
+          <img src="img/logo.svg" width="64" height="68" alt="Логотип яхт-клуба Yacht Club">
+        </p>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a href="#">Наш клуб</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">Регаты</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">Команда</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">Обучение</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="signin" href="#">
+          <img src="img/user.svg" width="16" height="18" alt="Кабинет пользователя">
+        </a>
+      </nav>
     </header>
     <main class="main-content">
-        <section class="promo">
-            <h1>Вместе под парусом</h1>
-            <img src="img/main-photo.jpg" width="1170" height="466" alt="Логотип яхт-клуба Yacht Club">
-        </section>
-        <section class="event-1">
-            <div class="event-1-content">
-                <p class="date">20 октября - 19 апреля<p>
-                <h2>Стань частью команды</h2>
-                <p>Если вы давно хотели попробовать себя в яхтинге – сейчас самое лучшее время! Мы набираем команду будущих шкиперов. За 6 вы станете настоящим капитаном и уже в следующем сезоне сможете самостоятельно выйти в море!</p>
+      <section class="hero">
+        <h1>Вместе под парусом</h1>
+        <img src="img/main-photo-1.jpg" width="1170" height="466" alt="Парусное судно на закате">
+      </section>
+      <article class="blog-article blog-article-1 short">
+        <div class="blog-article-content">
+          <p class="blog-article-date"><time datetime="2021-10-20">20 октября</time> - <time datetime="2021-04-19">19 апреля</time></p>
+          <h2>Стань частью команды</h2>
+          <p class="blog-article-description">Если вы давно хотели попробовать себя в яхтинге – сейчас самое лучшее время! Мы набираем команду будущих шкиперов. За 6 вы станете настоящим капитаном и уже в следующем сезоне сможете самостоятельно выйти в море!</p>
+          <button class="more" type="button">Читать дальше</button>
+        </div>
+        <img class="blog-article-img" src="img/blog-photo-1.jpg" width="600" height="262" alt="Мужчина на яхте смотрит в бинокль">
+      </article>
+      <article class="blog-article blog-article-2 short">
+        <div class="blog-article-content">
+          <p class="blog-article-date"><time datetime="2021-07-16">16 июля</time> - <time datetime="2021-07-23">23 июля</time></p>
+          <h2>Рожденные в воде</h2>
+          <p class="blog-article-description">Подарите детям настоящее приключение! День с морскими пиратами на корабле – это лучшая команда, веселые аниматоры, игры, соревнования, работа в команде и, конечно, море!</p>
+          <button class="more" type="button">Читать дальше</button>
+        </div>
+        <img class="blog-article-img" src="img/blog-photo-2.jpg" width="600" height="252" alt="Дети и взрослые на яхте">
+      </article>
+      <section class="rent">
+        <header>
+          <h2>Аренда яхты</h2>
+          <ul class="card-view-buttons">
+            <li class="card-view-item">
+              <button class="card-view-button-grid active" type="button"></button>
+            </li>
+            <li class="card-view-item">
+              <button class="card-view-button-list" type="button"></button>
+            </li>
+          </ul>
+        </header>
+        <ul class="cards">
+          <li class="card">
+            <img class="card-img" src="img/photo-card-1.jpg" width="310" height="141" alt="Белая двухпалубная яхта">
+            <div class="card-content">
+              <h3 class="card-title">Катер Meridian 401</h3>
+              <p class="card-description">Яхта 401 длиной 12.5 метров и шириной 4.2 метра, вместимостью 11 человек</p>
+              <ul class="card-features">
+                <li>2 каюты</li>
+                <li>4 спальных места</li>
+                <li>аудиосистема, кондиционер</li>
+                <li>холодильник, микроволновка</li>
+                <li>душ, туалет</li>
+              </ul>
             </div>
-            <img class="event-1-img" src="img/photo-1.jpg" width="600" height="262" alt="Логотип яхт-клуба Yacht Club">
-        </section>
-        <section class="event-2">
-            <div class="event-2-content">
-                <p class="date">16 июля - 23 июля</p>
-                <h2>Рожденные в воде</h2>
-                <p>Подарите детям настоящее приключение! День с морскими пиратами на корабле – это лучшая команда, веселые аниматоры, игры, соревнования, работа в команде и, конечно, море!</p>
+            <p class="card-price">
+              <span class="card-price-name">Цена:</span>
+              <span class="card-price-value">14 000 ₽/час</span>
+            </p>
+          </li>
+          <li class="card">
+            <img class="card-img" src="img/photo-card-2.jpg" width="310" height="141" alt="Белая двухпалубная яхта">
+            <div class="card-content">
+              <h3 class="card-title">Катер 60 Manhattan</h3>
+              <p class="card-description">Двухпалубное судно VIP уровня длиной 20 метров, вместимостью 10 человек</p>
+              <ul class="card-features">
+                <li>6 кают</li>
+                <li>носовая часть с огромной подушкой</li>
+                <li>просторный флайбридж</li>
+                <li>оборудованная кухня</li>
+                <li>джакузи</li>
+              </ul>
             </div>
-            <img class="event-2-img" src="img/photo-2.jpg" width="600" height="252" alt="Логотип яхт-клуба Yacht Club">
-        </section>
-
-        <section class="rent">
-            <h2>Аренда яхты</h2>
-            <ul class="cards">
-                <li class="card">
-                    <img class="card-img" src="img/photo-card-1.jpg" alt="Meridian 401" width="310" height="141">
-                    <h3 class="card-title">Катер Meridian 401</h3>
-                    <p class="card-description">Яхта 401 длиной 12.5 метров и шириной 4.2 метра, вместимостью 11 человек</p>
-                    <ul class="card-features">
-                        <li>2 каюты</li>
-                        <li>4 спальных места</li>
-                        <li>аудиосистема, кондиционер</li>
-                        <li>холодильник, микроволновка</li>
-                        <li>душ, туалет</li>
-                    </ul>
-                    <p class="card-price">
-                        <span class="card-price-name">Цена:</span>
-                        <span class="card-price-value">14 000 ₽/час</span>
-                    </p>
-                </li>
-
-                <li class="card">
-                    <img class="card-img" src="img/photo-card-2.jpg" alt="Mamhattan 60" width="310" height="141">
-                    <h3 class="card-title">Катер 60 Manhattan</h3>
-                    <p class="card-description">Двухпалубное судно VIP уровня длиной 20 метров, вместимостью 10 человек</p>
-                    <ul class="card-features">
-                        <li>6 кают</li>
-                        <li>носовая часть с огромной подушкой</li>
-                        <li>просторный флайбридж</li>
-                        <li>оборудованная кухня</li>
-                        <li>джакузи</li>
-                    </ul>
-                    <p class="card-price">
-                        <span class="card-price-name">Цена:</span>
-                        <span class="card-price-value">25 000 ₽/час</span>
-                    </p>
-                </li>
-
-                <li class="card">
-                    <img class="card-img" src="img/photo-card-3.jpg" alt="Starfisher 34" width="310" height="141">
-                    <h3 class="card-title">Катер Starfisher 34</h3>
-                    <p class="card-description">Моторная яхта длиной 11 метров
-                        и вместимостью до 8 человек</p>
-                    <ul class="card-features">
-                        <li>4 каюты</li>
-                        <li>6 спальных мест</li>
-                        <li>аудиосистема, кондиционер</li>
-                        <li>холодильник, микроволновка</li>
-                        <li>душ, туалет</li>
-                    </ul>
-                    <p class="card-price">
-                        <span class="card-price-name">Цена:</span>
-                        <span class="card-price-value">18 000 ₽/час</span>
-                    </p>
-                </li>
-
-                <li class="card">
-                    <img class="card-img" src="img/photo-card-4.jpg" alt="Катер Pacific 7-13" width="310" height="141">
-                    <h3 class="card-title">Катер Pacific 7-13</h3>
-                    <p class="card-description">Катер Pacific длиной 12 метров и шириной 4.6 метра, вместимостью 8 человек</p>
-                    <ul class="card-features">
-                        <li>1 каюта</li>
-                        <li>2 спальных места</li>
-                        <li>аудиосистема, кондиционер</li>
-                        <li>холодильник, микроволновка</li>
-                        <li>туалет</li>
-                    </ul>
-                    <p class="card-price">
-                        <span class="card-price-name">Цена:</span>
-                        <span class="card-price-value">11 000 ₽/час</span>
-                    </p>
-                </li>
-
-                <li class="card">
-                    <img class="card-img" src="img/photo-card-5.jpg" alt="Катер Atlantic 3000" width="310" height="141">
-                    <h3 class="card-title">Катер Atlantic 3000</h3>
-                    <p class="card-description">Катер Atlantic длиной 14 метров
-                        и вместимостью до 6 человек</p>
-                    <ul class="card-features">
-                        <li>2 каюты</li>
-                        <li>4 спальных места</li>
-                        <li>просторный флайбридж</li>
-                        <li>оборудованная кухня</li>
-                        <li>душ, туалет</li>
-                    </ul>
-                    <p class="card-price">
-                        <span class="card-price-name">Цена:</span>
-                        <span class="card-price-value">15 000 ₽/час</span>
-                    </p>
-                </li>
+            <p class="card-price">
+              <span class="card-price-name">Цена:</span>
+              <span class="card-price-value">25 000 ₽/час</span>
+            </p>
+          </li>
+          <li class="card">
+            <img class="card-img" src="img/photo-card-3.jpg" width="310" height="141" alt="Белая яхта">
+            <div class="card-content">
+              <h3 class="card-title">Катер Starfisher 34</h3>
+              <p class="card-description">Моторная яхта длиной 11 метров и вместимостью до 8 человек</p>
+              <ul class="card-features">
+                <li>4 каюты</li>
+                <li>6 спальных мест</li>
+                <li>аудиосистема, кондиционер</li>
+                <li>холодильник, микроволновка</li>
+                <li>душ, туалет</li>
+              </ul>
+            </div>
+            <p class="card-price">
+              <span class="card-price-name">Цена:</span>
+              <span class="card-price-value">18 000 ₽/час</span>
+            </p>
+          </li>
+          <li class="card">
+            <img class="card-img" src="img/photo-card-4.jpg" width="310" height="141" alt="Белый катер">
+            <div class="card-content">
+              <h3 class="card-title">Катер Pacific 7-13</h3>
+              <p class="card-description">Катер Pacific длиной 12 метров и шириной 4.6 метра, вместимостью 8 человек</p>
+              <ul class="card-features">
+                <li>1 каюта</li>
+                <li>2 спальных места</li>
+                <li>аудиосистема, кондиционер</li>
+                <li>холодильник, микроволновка</li>
+                <li>туалет</li>
+              </ul>
+            </div>
+            <p class="card-price">
+              <span class="card-price-name">Цена:</span>
+              <span class="card-price-value">11 000 ₽/час</span>
+            </p>
+          </li>
+          <li class="card">
+            <img class="card-img" src="img/photo-card-5.jpg" width="310" height="141" alt="Белый катер">
+            <div class="card-content">
+              <h3 class="card-title">Катер Atlantic 3000</h3>
+              <p class="card-description">Катер Atlantic длиной 14 метров и вместимостью до 6 человек</p>
+              <ul class="card-features">
+                <li>2 каюты</li>
+                <li>4 спальных места</li>
+                <li>просторный флайбридж</li>
+                <li>оборудованная кухня</li>
+                <li>душ, туалет</li>
+              </ul>
+            </div>
+            <p class="card-price">
+              <span class="card-price-name">Цена:</span>
+              <span class="card-price-value">15 000 ₽/час</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery">
+        <h2>Галерея</h2>
+        <div class="slider">
+          <img class="active-photo" src="img/gallery-photo-4.jpg" width="970" height="690" alt="">
+          <ul class="preview-list">
+            <li>
+              <a href="img/gallery-photo-1.jpg">
+                <img src="img/preview-gallery-photo-1.jpg" width="170" height="150" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="img/gallery-photo-2.jpg">
+                <img src="img/preview-gallery-photo-2.jpg" width="170" height="150" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="img/gallery-photo-3.jpg">
+                <img src="img/preview-gallery-photo-3.jpg" width="170" height="150" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="img/gallery-photo-4.jpg" class="active-item">
+                <img src="img/preview-gallery-photo-4.jpg" width="170" height="150" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="news">
+        <h2>Новости</h2>
+        <article class="post">
+          <figure class="post-img">
+            <img src="img/news-photo.jpg" width="770" height="301" alt="Человек в форме моряка на морском судне">
+            <figcaption>Победитель регаты шкипер Иван Кулешов</figcaption>
+          </figure>
+          <div class="post-content">
+            <h3>Итоги регаты Sochi Race Week 2020</h3>
+            <p>Свыше сотни участников собирались на побережье Сочи, чтобы посоревноваться за главный приз. В соревнованиях приняли участие как новички, так и <del>профессионалы</del> <ins>моряки</ins>, имеющие за плечами немалый опыт.</p>
+            <p>На протяжении всего плавания нас сопровождало солнце прекрасная погода, в отдельные дни ветер до 20 узлов. Регата была прекрасно организована, 135 яхтсменов, 7 экипажей, 9 стран участниц, 4 гоночных дня, 3 дивизиона.</p>
+            <h4>Команды-участники:</h4>
+            <ul>
+              <li>Восток 35</li>
+              <li>Fortune Sailing</li>
+              <li>Сибирь</li>
+              <li>Левиафан</li>
+              <li>Черный лебедь</li>
+              <li>White Pepper</li>
+              <li>Pearl</li>
             </ul>
-        </section>
-
-        <section class="gallery">
-            <h2>Галерея</h2>
-            <div class="gallery-wrapper">
-                <img class="active-img" src="img/gallery-photo-1.jpg" alt="Галерея" width="970" height="690">
-                <ul class="gallery-preview">
-                    <li class="preview-item"><a href="#"><img src="img/gallery-photo-2.jpg" alt="Галерея" width="170" height="150"></a></li>
-                    <li class="preview-item"><a href="#"><img src="img/gallery-photo-3.jpg" alt="Галерея" width="170" height="150"></a></li>
-                    <li class="preview-item"><a href="#"><img src="img/gallery-photo-4.jpg" alt="Галерея" width="170" height="150"></a></li>
-                    <li class="preview-item"><a class="active-item" href="#"><img src="img/gallery-photo-5.jpg" alt="Галерея" width="170" height="150"></a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="news">
-            <div>
-                <h2 class="right">Новости</h2>
-                <img class="news-img" src="img/photo-3.jpg" width="770" height="301" alt="Победитель регаты шкипер Иван Кулешов">
-                <figcaption>Победитель регаты шкипер Иван Кулешов</figcaption>
-                <h3>Итоги регаты Sochi Race Week 2020</h3>
-                <p class="first-description">Свыше сотни участников собирались на побережье Сочи, чтобы посоревноваться за главный приз. В соревнованиях приняли участие как новички, так и <s>профессионалы</s> моряки, имеющие за плечами немалый опыт.</p>
-                <p class="second-description">На протяжении всего плавания нас сопровождало солнце прекрасная погода, в отдельные дни ветер до 20 узлов. Регата была прекрасно организована, 135 яхтсменов, 7 экипажей, 9 стран участниц, 4 гоночных дня, 3 дивизиона.</p>
-                <h4>Команды-участники:</h4>
-                <ul class="team-list">
-                    <li class="team-item">Восток 35</li>
-                    <li class="team-item">Fortune Sailing</li>
-                    <li class="team-item">Сибирь</li>
-                    <li class="team-item">Левиафан</li>
-                    <li class="team-item">Черный лебедь</li>
-                    <li class="team-item">White Pepper</li>
-                    <li class="team-item">Pearl</li>
-                </ul>
-                <p class="third-description">Чемпионом регаты Sochi Race Week 2020 стала команда Fortune Sailing, в прошлом году остановившаяся в одном шаге от победы, а в этом сезоне опередившая ближайшего соперника — экипаж «Восток 35» — на <s>12 баллов</s> 5 баллов.</p>
-                <blockquote>Мы в команде очень дружны и понимаем друг друга без слов, думаю, поэтому мы и победили</blockquote>
-                <p class="winner">Поздравляем победителей и ждем все участников снова на осенних регатах!</p>
-                <div class="author-about">
-                    <img src="img/author.jpg" class="author-img" width="60" height="60" alt="Автор Артем Колесников">
-                    <div>
-                        <p class="author">Артем Колесников</p>
-                        <date class="date" datetime="2021-06-20"> 20.06.2021</date>
-                    </div>
-                    <img class="share-img" src="img/share.svg" alt="" width="26" height="22">
-                </div>  
-            </div>
-        </section>
-        <section class="contacts">
-            <div class="contact-content">
-                <h2 class="contact">Контакты</h2>  
-                <ul class="contact-items">
-                    <li class="contact-item"> 
-                        <h3>Адрес:</h3>
-                        <address>г. Сочи, ул. Бзугу, 9</address>
-                    </li>
-                    <li class="contact-item">
-                        <h3>Телефон:</h3>
-                        <a href="tel:8 (622) 62-05-63">8 (622) 62-05-63</a>
-                    </li>
-                    <li class="contact-item">
-                        <h3>E-mail:</h3>
-                        <a href="mailto:yachtclub-sochi@mail.ru">yachtclub-sochi@mail.ru</a>
-                    </li>
-                    <li class="contact-item">
-                        <h3>Мы в социальных сетях:</h3>
-                        <ul class="social-list">
-                            <li class="social-item"><a href="#"><img src="img/facebook.svg" width="9" height="16" alt="Facebook"></a></li>
-                            <li class="social-item"><a href="#"><img src="img/twitter.svg" width="18" height="16" alt="Twitter"></a></li>
-                            <li class="social-item"><a href="#"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <img class="map" src="img/map.png" width="670" height="351" alt="Карта с адресом">
-        </section>
+            <p>Чемпионом регаты Sochi Race Week 2020 стала команда Fortune Sailing, в прошлом году остановившаяся в одном шаге от победы, а в этом сезоне опередившая ближайшего соперника — экипаж «Восток 35» — на <del>12 баллов</del> <ins>5 баллов</ins>.</p>
+            <blockquote>Мы в команде очень дружны и понимаем друг друга без слов, думаю, поэтому мы и победили</blockquote>
+            <p>Поздравляем победителей и ждем все участников снова на осенних регатах!</p>
+          </div>
+          <footer class="post-footer">
+            <img class="post-author-img" src="img/author.jpg" width="60" height="60" alt="Артем Колесников">
+            <p class="post-meta">
+              <a href="#">Артем Колесников</a>
+              <time datetime="2021-06-20">20.06.2021</time>
+            </p>
+            <a class="post-share" href="#">
+              <img src="img/share.svg" width="26" height="26" alt="Поделиться">
+            </a>
+          </footer>
+        </article>
+      </section>
+      <section class="contacts">
+        <div class="contacts-content">
+          <h2>Контакты</h2>
+          <ul class="contact-items">
+            <li class="contact-item">
+              <h3>Адрес:</h3>
+              <address>г. Сочи, ул. Бзугу, 9</address>
+            </li>
+            <li class="contact-item">
+              <h3>Телефон:</h3>
+              <a href="tel:+7622620563">8 (622) 62-05-63</a>
+            </li>
+            <li class="contact-item">
+              <h3>E-mail:</h3>
+              <a href="mailto:yachtclub-sochi@mail.ru">yachtclub-sochi@mail.ru</a>
+            </li>
+            <li class="contact-item">
+              <h3>Мы в социальных сетях:</h3>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/facebook.svg" alt="Facebook" width="9" height="16">
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/twitter.svg" alt="Twitter" width="18" height="16">
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/instagram.svg" alt="Instagram" width="18" height="18">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <img class="contacts-img" src="img/map.png" width="670" height="351" alt="Карта с адресом яхт клуба">
+      </section>
     </main>
     <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <img class="yaxt-logo" src="img/logo.svg" width="100" height="106" alt="Логотип яхт-клуба Yacht Club">
-                <p class="copyright"><a href="#">Политика конфиденциальности</a></p>
-                <p>Яхтклуб ©2020 Все права защищены</p>
-            </div>
-            <ul class="footer-navigation">
-                <div class="footer-navigation-topics">
-                    <li class="footer-navigation-item">
-                        <h2>Компания</h2>
-                        <ul class="company-list">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Команда</a></li>
-                            <li><a href="#">Новости</a></li>
-                            <li><a href="#">Блог</a></li>
-                            <li><a href="#">Галерея</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="footer-navigation-topics">
-                    <li class="footer-navigation-item">
-                        <h2>Яхт-клуб</h2>
-                        <ul>
-                            <li><a href="#">Правила</a></li>
-                            <li><a href="#">Стоимость</a></li>
-                            <li><a href="#">Анкета</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Партнеры</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="footer-navigation-topics">
-                    <li class="footer-navigation-item">
-                        <h2>Услуги</h2>
-                        <ul>
-                            <li><a href="#">Аренда яхты</a></li>
-                            <li><a href="#">Свадьба на яхте</a></li>
-                            <li><a href="#">День рождения</a></li>
-                            <li><a href="#">Бизнес-встречи</a></li>
-                            <li><a href="#">Прогулки</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="footer-navigation-topics">
-                    <li class="footer-navigation-item">
-                        <h2>Регаты</h2>
-                        <ul>
-                            <li><a href="#">Копроративные регаты</a></li>
-                            <li><a href="#">Календарь мероприятий</a></li>
-                            <li><a href="#">Стать участником</a></li>
-                            <li><a href="#">Результаты регат</a></li>
-                            <li><a href="#">Обучение</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </ul>
+      <div class="footer-container">
+        <div class="footer-column">
+          <p class="logo">
+            <img src="img/logo.svg" width="100" height="106" alt="Логотип яхт клуба">
+          </p>
+          <p class="policy"><a href="#">Политика конфиденциальности</a></p>
+          <p class="copyright">Яхтклуб ©2018 Все права защищены</p>
         </div>
+        <ul class="footer-navigation-topics">
+          <li class="footer-navigation-topic">
+            <h2>Компания</h2>
+            <ul class="footer-navigation">
+              <li class="footer-navigation-item">
+                <a href="#">О нас</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Команда</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Новости</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Блог</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Галерея</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-navigation-topic">
+            <h2>Яхт-клуб</h2>
+            <ul class="footer-navigation">
+              <li class="footer-navigation-item">
+                <a href="#">Правила</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Стоимость</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Анкета</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">FAQ</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Партнеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-navigation-topic">
+            <h2>Услуги</h2>
+            <ul class="footer-navigation">
+              <li class="footer-navigation-item">
+                <a href="#">Аренда яхты</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Свадьба на яхте</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">День рождения</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Бизнес-встречи</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Прогулки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-navigation-topic">
+            <h2>Регаты</h2>
+            <ul class="footer-navigation">
+              <li class="footer-navigation-item">
+                <a href="#">Корпоративные регаты</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Календарь мероприятий</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Стать участником</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Результаты регат</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="#">Обучение</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
